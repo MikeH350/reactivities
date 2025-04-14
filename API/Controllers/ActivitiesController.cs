@@ -33,10 +33,10 @@ public class ActivitiesController: BaseApiController
         return await Mediator.Send(new CreateActivity.Command{Activity = activity});
     }
 
-    [HttpPut]
-    public async Task<ActionResult> EditActivity(Activity activity)
-    {
-        return await Mediator.Send(new EditActivity.Command{Activity = activity});
-    }
+    // [HttpPut]
+    // public async Task<ActionResult> EditActivity(Activity activity)
+    // {
+    //     return await Mediator.Send(new EditActivity.Command{Activity = activity});
+    // }
 
 }
